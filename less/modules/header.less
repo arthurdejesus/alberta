@@ -1,0 +1,56 @@
+
+.navbar-default{
+	&.navbar-menu{
+		min-height: 123px;
+		background-color:#fff;
+		border:0;
+		border-bottom:1px solid #dddddd;
+		margin-bottom: 0;
+		z-index: 9;
+	}
+
+	&:after{
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+.navbar-default{
+	.navbar-nav{
+			float: right;
+			margin: 2em 0;
+
+		> li{
+				.font-sbold();
+				font-size: 16px;
+				position: relative;
+
+			> a{
+				color: #03121b;
+				text-transform: uppercase;
+				padding: 15px 20px;
+				position: relative;
+
+				&:hover{
+					color: #2978b5;
+
+				}
+			}
+
+			&:last-child{
+				> a{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.navbar-brand{
+		width: 295px;
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
